@@ -15,7 +15,7 @@ import javafx.stage.Stage;
  *
  * @author s1601402
  */
-public class Joulukalenteri extends Application {
+public class JouluKalenteri extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
