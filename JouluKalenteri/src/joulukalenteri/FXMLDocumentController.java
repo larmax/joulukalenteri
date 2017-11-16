@@ -5,6 +5,7 @@
  */
 package joulukalenteri;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -13,6 +14,18 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
+import javafx.stage.Stage;
+import javafx.scene.Scene;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.layout.AnchorPane;
+import java.net.URL;
+import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
 
 /**
  *
@@ -20,6 +33,7 @@ import javafx.scene.image.ImageView;
  */
 public class FXMLDocumentController implements Initializable {
 private int avatut;
+
 
 //    FXMLDocumentController(int luukut) {
 //        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
@@ -31,9 +45,36 @@ public  FXMLDocumentController(int avatut){
 }
 
     @FXML
+    private Button Day1;
+
+    @FXML
+    private void openNewWindow(ActionEvent event) {
+
+    }
+
+
+
+        
+
+    @FXML
     private void handleDay1(ActionEvent event) {
 if (avatut >= 1){
     System.out.println("bim");
+    try {
+            Stage newStage = new Stage();
+
+            Parent root = FXMLLoader.load(getClass().getResource("kuva.fxml"));
+
+            Scene scene = new Scene(root);
+            newStage.setScene(scene);
+            newStage.setTitle("User dashboard");
+            newStage.setResizable(false);
+            newStage.show();
+
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+
 }
     }
 
@@ -49,6 +90,7 @@ if (avatut >= 2){
 if (avatut >= 3){
     System.out.println("bim");
 }
+
     }
 
     @FXML
