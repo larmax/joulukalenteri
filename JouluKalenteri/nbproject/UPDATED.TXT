@@ -1,5 +1,9 @@
 ===========================================
+<<<<<<< HEAD
 Project Joulukalenteri build script updated
+=======
+Project JouluKalenteri build script updated
+>>>>>>> 0c246601d767f7923a82544e2b6c0170c6bb67f7
 ===========================================
 
 Project build script file jfx-impl.xml in nbproject sub-directory has not been recognized

@@ -42,13 +42,13 @@ public class MainJouluKalenteri extends Application {
                if(pvm.after((""+i+"/11/2017"))){
                     paivat.add(""+i+"/11/2017");
                     luukut +=1;
-                    System.out.println("toimii");
+                 
                }
            
             
         }
-  
-    
+//  KuvanVaihtaminen VaihaKuva = new KuvanVaihtaminen(paivat);
+    FXMLDocumentController controlleri = new FXMLDocumentController(luukut);
 
 
     }
