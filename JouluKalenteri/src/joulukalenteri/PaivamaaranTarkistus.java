@@ -12,7 +12,7 @@ public class PaivamaaranTarkistus {
  
 
 
-private boolean after(String date){
+boolean after(String date){
    
     //Päivämäärät tulee olla tässä muodossa
     Date eka = new Date();    

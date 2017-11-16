@@ -10,6 +10,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.ArrayList;
 
 /**
  *
@@ -32,6 +35,22 @@ public class MainJouluKalenteri extends Application {
      */
     public static void main(String[] args) {
         launch(args);
+              PaivamaaranTarkistus pvm = new PaivamaaranTarkistus();
+        ArrayList paivat = new ArrayList();
+        int luukut =0;
+        for (int i = 1; i<24; i++){
+               if(pvm.after((""+i+"/11/2017"))){
+                    paivat.add(""+i+"/11/2017");
+                    luukut +=1;
+                    System.out.println("toimii");
+               }
+           
+            
+        }
+  
+    
+
+
     }
     
 }
