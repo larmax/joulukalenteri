@@ -31,7 +31,7 @@
       <Button fx:id="Day3" layoutX="721.0" layoutY="416.0" mnemonicParsing="false" onAction="#handleDay3" text="Day 3" />
       <Button fx:id="Day17" layoutX="283.0" layoutY="66.0" mnemonicParsing="false" onAction="#handleDay17" text="Day 17" />
       <Button fx:id="Day7" layoutX="636.0" layoutY="78.0" mnemonicParsing="false" onAction="#handleDay7" text="Day 7" />
-      <Button fx:id="Day1" layoutX="821.0" layoutY="41.0" mnemonicParsing="false" text="Day 1" />
+      <Button fx:id="Day1" layoutX="821.0" layoutY="41.0" mnemonicParsing="false" onAction="#handleDay1" text="Day 1" />
       <Button fx:id="Day21" layoutX="283.0" layoutY="237.0" mnemonicParsing="false" onAction="#handleDay21" text="Day 21" />
     </children>
 </AnchorPane>
