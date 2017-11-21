@@ -46,18 +46,14 @@ public class FXMLDocumentController implements Initializable {
         System.out.println("Hyvää joulua!");
 
         try {
-            Stage newStage = new Stage();
-
-            Parent root = FXMLLoader.load(getClass().getResource("kuva.fxml"));
-
-            Scene scene = new Scene(root);
-            newStage.setScene(scene);
-            newStage.setTitle("User dashboard");
-            newStage.setResizable(false);
-            newStage.show();
-
-        } catch (IOException ex) {
-            ex.printStackTrace();
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Kuva1.fxml"));
+            Parent root1 = (Parent) fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.setTitle("Day1");
+            stage.setScene(new Scene(root1));
+            stage.show();
+        } catch (Exception e) {
+            System.out.println("Can't load new window");
         }
 
     }
