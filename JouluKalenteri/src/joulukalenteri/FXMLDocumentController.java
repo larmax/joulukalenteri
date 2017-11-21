@@ -58,7 +58,7 @@ public  FXMLDocumentController(){
 
     @FXML
     private void handleDay1(ActionEvent event) {
-if (avatut >= 1){
+if (avatut >= 1){''
     System.out.println("bim");
     try {
             Stage newStage = new Stage();

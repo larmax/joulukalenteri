@@ -4,36 +4,31 @@
  * and open the template in the editor.
  */
 package joulukalenteri;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+
 public class PaivamaaranTarkistus {
+
     private Date tamaPaiva = new Date();
- 
 
-
-boolean after(String date){
-   
-    //Päivämäärät tulee olla tässä muodossa
-    Date eka = new Date();    
-  
-        
-        
-        //Muunnetaan String dateksi, jotta voimme myöhemmin vertailla.
+    int luukut(String date) {
+        Date eka = new Date();
+        int luukut = 1;
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-        try {
-          eka = sdf.parse(date);
-            
-        } catch (ParseException ex) {
-            
+
+        for (int i = 1; i < 24; i++) {
+
+            try {
+                if (tamaPaiva.after(eka = sdf.parse("" + i + "/11/2017"))) {
+
+                }
+                luukut += 1;
+            } catch (ParseException ex) {
+            }
         }
- if(tamaPaiva.after(eka)){
-     return true;
- }else{
-   return false;  
- }
-        
-}
+        return luukut;
+    }
 
 }
-

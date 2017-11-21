@@ -38,16 +38,7 @@ public class MainJouluKalenteri extends Application {
     public static void main(String[] args) {
         launch(args);
               PaivamaaranTarkistus pvm = new PaivamaaranTarkistus();
-        ArrayList paivat = new ArrayList();
     
-       int luukut = 1;
-        for (int i = 1; i<24; i++){
-               if(pvm.after((""+i+"/11/2017"))){
-                    paivat.add(""+i+"/11/2017");
-                    luukut +=1;
-                 
-               }
-           luukut = luukutt;
             
         }
         
@@ -57,8 +48,6 @@ public class MainJouluKalenteri extends Application {
 
     }
     
-    public int getLuukut(){
-   return luukutt; 
-}
+
     
-}
+
