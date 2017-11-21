@@ -9,13 +9,19 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+
+
 public class PaivamaaranTarkistus {
+     int luukut = 1;
+public int getLuukut(){
+    return luukut;
+}
 
     private Date tamaPaiva = new Date();
 
     int luukut(String date) {
         Date eka = new Date();
-        int luukut = 1;
+       
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
         for (int i = 1; i < 24; i++) {

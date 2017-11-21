@@ -32,7 +32,10 @@ import javafx.scene.control.Label;
  * @author s1601402
  */
 public class FXMLDocumentController implements Initializable {
-private int avatut;
+private int luukut;
+PaivamaaranTarkistus pvm = new PaivamaaranTarkistus();
+
+
 
 
 //    FXMLDocumentController(int luukut) {
@@ -41,7 +44,7 @@ private int avatut;
 
 public  FXMLDocumentController(){
 //  avatut = MainJouluKalenteri.luukutt;
-    avatut = 5;
+
 }
 
     @FXML
@@ -58,36 +61,51 @@ public  FXMLDocumentController(){
 
     @FXML
     private void handleDay1(ActionEvent event) {
-if (avatut >= 1){''
-    System.out.println("bim");
-    try {
-            Stage newStage = new Stage();
+luukut = pvm.getLuukut();
+if (luukut >= 1){
 
-            Parent root = FXMLLoader.load(getClass().getResource("kuva.fxml"));
+        System.out.println("Hyvää joulua!");
 
-            Scene scene = new Scene(root);
-            newStage.setScene(scene);
-            newStage.setTitle("User dashboard");
-            newStage.setResizable(false);
-            newStage.show();
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Kuva1.fxml"));
+            Parent root1 = (Parent) fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.setTitle("Day1");
+            stage.setScene(new Scene(root1));
+            stage.show();
+        } catch (Exception e) {
+            System.out.println("Can't load new window");
 
-        } catch (IOException ex) {
-            ex.printStackTrace();
+
         }
 
 }
     }
 
     @FXML
-    private void handleDay2() {
-if (avatut >= 2){
-    System.out.println("bim");
+    private void handleDay2(ActionEvent event) {
+if (luukut >= 2){
+  
+        System.out.println("Hyvää joulua!");
+
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Kuva1.fxml"));
+            Parent root1 = (Parent) fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.setTitle("Day1");
+            stage.setScene(new Scene(root1));
+            stage.show();
+        } catch (Exception e) {
+            System.out.println("Can't load new window");
+
+
+        }
 }
     }
 
     @FXML
     private void handleDay3() {
-if (avatut >= 3){
+if (luukut >= 3){
     System.out.println("bim");
 }
 
@@ -95,147 +113,147 @@ if (avatut >= 3){
 
     @FXML
     private void handleDay4() {
-if (avatut >= 4){
+if (luukut >= 4){
     System.out.println("bim");
 }
     }
 
     @FXML
     private void handleDay5() {
-if (avatut >= 5){
+if (luukut >= 5){
     System.out.println("bim");
 }
     }
 
     @FXML
     private void handleDay6() {
-if (avatut >= 6){
+if (luukut >= 6){
     System.out.println("bim");
 }
     }
 
     @FXML
     private void handleDay7() {
-if (avatut >= 7){
+if (luukut >= 7){
     System.out.println("bim");
 }
     }
 
     @FXML
     private void handleDay8() {
-if (avatut >= 8){
+if (luukut >= 8){
     System.out.println("bim");
 }
     }
 
     @FXML
     private void handleDay9() {
-if (avatut >= 9){
+if (luukut >= 9){
     System.out.println("bim");
 }
     }
 
     @FXML
     private void handleDay10() {
-if (avatut >= 10){
+if (luukut >= 10){
     System.out.println("bim");
 }
     }
 
     @FXML
     private void handleDay11() {
-if (avatut >= 11){
+if (luukut >= 11){
     System.out.println("bim");
 }
     }
 
     @FXML
     private void handleDay12() {
-if (avatut >= 12){
+if (luukut >= 12){
     System.out.println("bim");
 }
     }
 
     @FXML
     private void handleDay13() {
-if (avatut >= 13){
+if (luukut >= 13){
     System.out.println("bim");
 }
     }
 
     @FXML
     private void handleDay14() {
-if (avatut >= 14){
+if (luukut >= 14){
     System.out.println("bim");
 }
     }
 
     @FXML
     private void handleDay15() {
-if (avatut >= 15){
+if (luukut >= 15){
     System.out.println("bim");
 }
     }
 
     @FXML
     private void handleDay16() {
-if (avatut >= 16){
+if (luukut >= 16){
     System.out.println("bim");
 }
     }
 
     @FXML
     private void handleDay17() {
-if (avatut >= 17){
+if (luukut >= 17){
     System.out.println("bim");
 }
     }
 
     @FXML
     private void handleDay18() {
-if (avatut >= 18){
+if (luukut >= 18){
     System.out.println("bim");
 }
     }
 
     @FXML
     private void handleDay19() {
-if (avatut >= 19){
+if (luukut >= 19){
     System.out.println("bim");
 }
     }
 
     @FXML
     private void handleDay20() {
-if (avatut >= 20){
+if (luukut >= 20){
     System.out.println("bim");
 }
     }
 
     @FXML
     private void handleDay21() {
-if (avatut >= 21){
+if (luukut >= 21){
     System.out.println("bim");
 }
     }
 
     @FXML
     private void handleDay22() {
-if (avatut >= 22){
+if (luukut >= 22){
     System.out.println("bim");
 }
     }
 
     @FXML
     private void handleDay23() {
-if (avatut >= 23){
+if (luukut >= 23){
     System.out.println("bim");
 }
     }
 
     @FXML
     private void handleDay24() {
-if (avatut >= 24){
+if (luukut >= 24){
     System.out.println("bim");
 }
     }
