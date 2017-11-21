@@ -9,39 +9,32 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+
+
 public class PaivamaaranTarkistus {
+     int luukut = 1;
+public int getLuukut(){
+    return luukut;
+}
 
     private Date tamaPaiva = new Date();
 
-    private boolean after(String date) {
-
-        //Päivämäärät tulee olla tässä muodossa
+    int luukut(String date) {
         Date eka = new Date();
-
-<<<<<<< HEAD
-=======
-boolean after(String date){
-   
-    //Päivämäärät tulee olla tässä muodossa
-    Date eka = new Date();    
-  
-        
-        
->>>>>>> 8c072b218f4e11fc109b2dc691ed12fb48b02f14
-        //Muunnetaan String dateksi, jotta voimme myöhemmin vertailla.
+       
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-        try {
-            eka = sdf.parse(date);
 
-        } catch (ParseException ex) {
+        for (int i = 1; i < 24; i++) {
 
+            try {
+                if (tamaPaiva.after(eka = sdf.parse("" + i + "/11/2017"))) {
+
+                }
+                luukut += 1;
+            } catch (ParseException ex) {
+            }
         }
-        if (tamaPaiva.after(eka)) {
-            return true;
-        } else {
-            return false;
-        }
-
+        return luukut;
     }
 
 }
