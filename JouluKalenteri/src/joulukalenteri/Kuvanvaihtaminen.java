@@ -1,8 +1,12 @@
 package joulukalenteri;
 
+import java.util.ArrayList;
+
+
 public class Kuvanvaihtaminen {
 
-    public static void vaihdakuva() {
-
+    public Kuvanvaihtaminen(ArrayList paivat) {
+            
     }
 }
+

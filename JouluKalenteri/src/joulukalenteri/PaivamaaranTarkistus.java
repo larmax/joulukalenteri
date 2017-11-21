@@ -18,6 +18,16 @@ public class PaivamaaranTarkistus {
         //Päivämäärät tulee olla tässä muodossa
         Date eka = new Date();
 
+<<<<<<< HEAD
+=======
+boolean after(String date){
+   
+    //Päivämäärät tulee olla tässä muodossa
+    Date eka = new Date();    
+  
+        
+        
+>>>>>>> 8c072b218f4e11fc109b2dc691ed12fb48b02f14
         //Muunnetaan String dateksi, jotta voimme myöhemmin vertailla.
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
         try {
