@@ -7,32 +7,33 @@ package joulukalenteri;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
-
-
 public class PaivamaaranTarkistus {
-     int luukut = 1;
-public int getLuukut(){
-    return luukut;
-}
+
+    int luukut = 1;
+
+    public int getLuukut() {
+        return luukut;
+    }
 
     private Date tamaPaiva = new Date();
 
-    int luukut(String date) {
+    int luukut() {
         Date eka = new Date();
-       
-        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
-        for (int i = 1; i < 24; i++) {
+//        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+//String s = sdf.format(date);
 
-            try {
-                if (tamaPaiva.after(eka = sdf.parse("" + i + "/11/2017"))) {
+   Calendar cal = Calendar.getInstance();
+cal.setTime(eka);
 
-                }
-                luukut += 1;
-            } catch (ParseException ex) {
-            }
+int day = cal.get(Calendar.DAY_OF_MONTH);
+        for (int i = 1; i < day; i++) {
+
+            luukut += 1;
+
         }
         return luukut;
     }

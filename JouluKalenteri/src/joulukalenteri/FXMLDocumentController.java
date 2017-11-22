@@ -32,9 +32,11 @@ import javafx.scene.control.Label;
  * @author s1601402
  */
 public class FXMLDocumentController implements Initializable {
-private int luukut;
+
 PaivamaaranTarkistus pvm = new PaivamaaranTarkistus();
 
+
+private int luukut;
 
 
 
@@ -43,6 +45,7 @@ PaivamaaranTarkistus pvm = new PaivamaaranTarkistus();
 //    }
 
 public  FXMLDocumentController(){
+        this.luukut = pvm.luukut();
 //  avatut = MainJouluKalenteri.luukutt;
 
 }
