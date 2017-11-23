@@ -9,7 +9,7 @@ and open the template in the editor.
 */
 
 .root {
-    -fx-background-image:url('file:C:/Users/s1601402/Desktop/joulukalenteri/JouluKalenteri/JouluKalenteri.jpg');
+    -fx-background-image:url('file:JouluKalenteri.jpg');
     -fx-background-repeat: no-repeat;
 }
 
