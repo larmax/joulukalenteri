@@ -46,7 +46,7 @@ public  FXMLDocumentController(){
     @FXML
     private void handleDay1(ActionEvent event) {
 luukut = pvm.getLuukut();
-if (luukut == 1){
+if (luukut >= 1){
 
         System.out.println("1");
 
