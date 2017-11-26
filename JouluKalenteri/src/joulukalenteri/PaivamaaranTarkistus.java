@@ -28,12 +28,16 @@ public class PaivamaaranTarkistus {
 cal.setTime(eka);
 
 int day = cal.get(Calendar.DAY_OF_MONTH);
+int kk = cal.get(Calendar.MONTH)+ 1;
         for (int i = 1; i < day; i++) {
-
-            luukut += 1;
-
-        }
-        return luukut;
+if(kk == 12){
+    luukut += 1; 
+}else{
+        luukut = 0;        
+                }
+        
+        
     }
-
+return luukut;
+}
 }
